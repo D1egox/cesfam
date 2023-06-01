@@ -1,4 +1,5 @@
 <?php include '../src/header.php'; ?>
+<?php include 'register.php'; ?>
 <script src="../src/js/rut.js"></script>
 <main class="text-center row">
   <form method='POST' class="col-3 mx-auto">
@@ -9,7 +10,7 @@
     <input type="Text" name="especialidad" class="form-control mt-5 mb-5" placeholder="Especialidad" maxlength="30" required>
     <input type="email" name="email" class="form-control mt-5 mb-5" placeholder="Email" required>
     <input type="password" name="pass" class="form-control mt-5 mb-5" placeholder="Clave" minlength="8" required>
-    <button type="submit" class="btn btn-primary">Registrarse</button>
+    <button type="submit" name="registrarse" class="btn btn-primary">Registrarse</button>
   </form>
 </main>
 <?php include '../src/footer.php'; ?>

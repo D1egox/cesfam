@@ -3,7 +3,7 @@
     <h1 class="mt-5 mb-5 display-1">Bienvenido de nuevo nombre apellido!</h1>
     <div class="col-8 mx-auto">
         <section class="col-2 float-start">
-            <img src="https://img.icons8.com/?size=512&id=65342&format=png" width="200px">
+            <img class="col" src="https://img.icons8.com/?size=512&id=65342&format=png">
         </section>
         <section class="col float-start text-start">
             <p>Rut:</p>

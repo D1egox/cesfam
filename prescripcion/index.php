@@ -55,7 +55,7 @@
       </div>
     </section> 
   </div>
-  <button type="submit" name="registrarse" class="btn btn-primary">Registrar Prescripcion</button>
+  <button type="submit" name="registrarse" class="btn btn-primary">Registrar Receta</button>
   </form>
 
 </main>

@@ -40,7 +40,7 @@
     <section id="izquierda" class="col-6">
       <h2 class="text-center col-12 mt-5">Receta Médica</h2>
       <div id="campos-dinamicos" class="row">
-        <div class="col-6">
+        <div class="col-9">
           <select name="medicamento" class="form-control mt-5 mb-5" placeholder="Medicamento" required>
             <?php
             foreach ($medicamentos as $medicamento) {
@@ -52,8 +52,11 @@
         <div class="col-3">
           <input type="number" name="cantidad" class="form-control mt-5 mb-5" placeholder="Cantidad" required>
         </div>
-        <button id="agregarBtn" type="button" onclick="agregarFila()" class="col-3 btn btn-primary mt-5 mb-5">Agregar</button>
       </div>
+      <div id="container">
+        <!-- aqui iran los demas agregar -->
+      </div>
+      <button id="agregarBtn" type="button" onclick="agregarFila()" class="col-12 btn btn-primary mt-5 mb-5">Agregar</button>
     </section> 
   </div>
   <button type="submit" name="registrarse" class="btn btn-primary">Registrar Receta</button>

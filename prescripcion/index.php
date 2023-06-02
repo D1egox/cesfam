@@ -36,21 +36,21 @@
           <input type="number" name="edad_paciente" class="form-control mt-5" onkeydown="return false" onwheel="event.preventDefault()" placeholder="Edad" min="0" max="130" required>
         </div>
       </section>
-      <input type="text" class="col-12" name="telefono_paciente" class="form-control mt-5 mb-5" placeholder="Número de celular" maxlength="9" oninput="validarNumeros(this)" required>
+      <input type="text" name="telefono_paciente" class="col-12 form-control mt-5 mb-5" placeholder="Número de celular" maxlength="9" oninput="validarNumeros(this)" required>
     </div>
     <section id="izquierda" class="col-6">
       <h2 class="text-center col-12 mt-5">Receta Médica</h2>
       <div id="campos-dinamicos">
         <div class="row">
-          <select name="medicamento" class=" col-6 form-control mt-5 mb-5" placeholder="Medicamento" required>
+          <select name="medicamento" class="col-6 form-control mt-5 mb-5" placeholder="Medicamento" required>
             <?php
             foreach ($medicamentos as $medicamento) {
               echo "<option value=\"$medicamento\">$medicamento</option>";
             }
             ?>
           </select>
-          <input type="number" class="col-3" name="cantidad" class="form-control mt-5 mb-5" placeholder="Cantidad"  required>
-          <button id="agregarBtn" class="col-3" type="button" onclick="agregarFila()" class="btn btn-primary mt-5">Agregar</button>
+          <input type="number" class="col-3 form-control" name="cantidad" class="form-control mt-5 mb-5" placeholder="Cantidad" required>
+          <button id="agregarBtn" class="col-3 from-control" type="button" onclick="agregarFila()" class="btn btn-primary mt-5">Agregar</button>
         </div>
       </div>
     </section> 

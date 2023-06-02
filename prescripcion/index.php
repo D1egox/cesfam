@@ -39,7 +39,7 @@
     </div>
     <section id="izquierda" class="col-6">
       <h2 class="text-center col-12 mt-5">Receta Médica</h2>
-      <div id="campos-dinamicos">
+      <div id="campos-dinamicos" class="row">
         <div class="col-6">
           <select name="medicamento" class="form-control mt-5 mb-5" placeholder="Medicamento" required>
             <?php

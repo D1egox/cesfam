@@ -24,7 +24,7 @@ if (isset($_POST['registrarse'])) {
 
 
     // Insertar los datos en la tabla "medico"
-    $sql = "INSERT INTO medico (rut, nombre, apellido, especialidad, email, pass) VALUES ('$rut', '$nombre', '$apellido', '$especialidad', '$email', '$hashedPassword')";
+    $sql = "INSERT INTO medico (rut_medico, nombre_medico, apellido_medico, especialidad, email_medico, pass) VALUES ('$rut', '$nombre', '$apellido', '$especialidad', '$email', '$hashedPassword')";
 
     if (mysqli_query($conn, $sql)) {
         echo "Registro exitoso";

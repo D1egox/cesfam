@@ -15,7 +15,7 @@ if(isset($_POST['login'])) {
     }
 
     // Verificar los datos de inicio de sesión en la tabla "medico"
-    $sql = "SELECT * FROM medico WHERE email = '$email'";
+    $sql = "SELECT * FROM medico WHERE email_medico = '$email'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) === 1) {
@@ -26,9 +26,9 @@ if(isset($_POST['login'])) {
         if (password_verify($pass, $hashedPassword)) {
             echo "Inicio de sesión exitoso";
             $_SESSION['email'] = $email;
-            $_SESSION['rut'] = $row['rut'];
-            $_SESSION['nombre'] = $row['nombre'];
-            $_SESSION['apellido'] = $row['apellido'];
+            $_SESSION['rut'] = $row['rut_medico'];
+            $_SESSION['nombre'] = $row['nombre_medico'];
+            $_SESSION['apellido'] = $row['apellido_medico'];
             $_SESSION['especialidad'] = $row['especialidad'];
             header("location: /user");
             // Aquí puedes redirigir al usuario a la página deseada

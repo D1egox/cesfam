@@ -11,6 +11,7 @@
             <p>Email: <?php echo $_SESSION['email']; ?></p>
             <p>Especialidad: <?php echo $_SESSION['especialidad']; ?></p>
         </section>
+        <a class="btn btn-primary" href="/prescripcion">Crear Prescripcion</a>
     </div>
 </main>
 <?php include '../src/footer.php'; ?>

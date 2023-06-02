@@ -1,5 +1,4 @@
 <?php include 'prescripcion.php'; ?>
-<?php include 'validarCantidad.php'; ?>
 <?php session_start(); ?>
 <script src="../src/js/rut.js"></script>
 <script src="../src/js/nombre.js"></script>

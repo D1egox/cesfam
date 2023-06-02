@@ -48,8 +48,8 @@
             }
             ?>
           </select>
-          <input type="number" class="col-3 form-control" name="cantidad" class="form-control mt-5 mb-5" placeholder="Cantidad" required>
-          <button id="agregarBtn" class="col-3 from-control" type="button" onclick="agregarFila()" class="btn btn-primary mt-5">Agregar</button>
+          <input type="number" name="cantidad" class="col-3 form-control mt-5 mb-5" placeholder="Cantidad" required>
+          <button id="agregarBtn" type="button" onclick="agregarFila()" class="col-3 from-control btn btn-primary mt-5">Agregar</button>
         </div>
       </div>
     </section> 

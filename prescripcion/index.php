@@ -40,16 +40,18 @@
     <section id="izquierda" class="col-6">
       <h2 class="text-center col-12 mt-5">Receta Médica</h2>
       <div id="campos-dinamicos">
-        <div class="row">
-          <select name="medicamento" class="col-6 form-control mt-5 mb-5" placeholder="Medicamento" required>
+        <div class="col-6">
+          <select name="medicamento" class="form-control mt-5 mb-5" placeholder="Medicamento" required>
             <?php
             foreach ($medicamentos as $medicamento) {
               echo "<option value=\"$medicamento\">$medicamento</option>";
             }
             ?>
           </select>
-          <input type="number" name="cantidad" class="col-3 form-control mt-5 mb-5" placeholder="Cantidad" required>
-          <button id="agregarBtn" type="button" onclick="agregarFila()" class="col-3 from-control btn btn-primary mt-5">Agregar</button>
+          <div class="col-6 row">
+            <input type="number" name="cantidad" class="col-3 form-control mt-5 mb-5" placeholder="Cantidad" required>
+            <button id="agregarBtn" type="button" onclick="agregarFila()" class="col-3 from-control btn btn-primary mt-5">Agregar</button>
+          </div>
         </div>
       </div>
     </section> 
